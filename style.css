@@ -1,0 +1,89 @@
+body {
+    background: black;
+  }
+  .page {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .neon-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+  }
+  .neon {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #2196f3;
+    padding: 15px 20px;
+    transition: .2s;
+    overflow: hidden;
+   
+  }
+  .button__line {
+    position: absolute;
+    display: block;
+  }
+  .button__line-top {
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(90deg, transparent, #2196f3);
+  }
+  .neon:hover .button__line-top {
+    left: 100%;
+    transition: 1.5s;
+    transition-delay: 0.2s;
+  }
+  .button__line-bottom {
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    right: -100%;
+    background: linear-gradient(270deg, transparent, #2196f3);
+  }
+  .neon:hover .button__line-bottom {
+    right: 100%;
+    transition: 1.5s;
+    transition-delay: 0.2s;
+  }
+  .button__line-left {
+    width: 2px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+    background: linear-gradient(90deg, transparent, #2196f3);
+  }
+  .neon:hover .button__line-left {
+    bottom: 100%;
+    transition: 1.5s;
+    transition-delay: 0.2s;
+  }
+  .button__line-right {
+    width: 2px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+    background: linear-gradient(90deg, transparent, #2196f3);
+  }
+  .neon:hover .button__line-right {
+    top: 100%;
+    transition: 1.5s;
+    transition-delay: 0.2s;
+  }
+  .neon:hover{
+    transition: 1.5s;
+    transition-delay: 1.5s;
+    box-shadow: 0 0 20px #2196f3, 0 0 40px #2196f3, 0 0 60px #2196f3;
+    background-color: #2196f3;
+    color: #333;
+  }
