@@ -16,7 +16,6 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    border: 1px solid red;
   }
   .neon {
     display: inline-block;
@@ -26,7 +25,7 @@ body {
     padding: 15px 20px;
     transition: .2s;
     overflow: hidden;
-   
+    font-size: 48px;
   }
   .button__line {
     position: absolute;
